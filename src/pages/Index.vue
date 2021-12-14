@@ -66,7 +66,7 @@
               <h3
                 class="no-margin q-pa-md titleFont text-secondary text-center"
               >
-                RACE TIME PREDICTOR
+                RACE TIME ESTIMATOR
               </h3>
               <h6 class="text-white no-margin">Enter your recent race time</h6>
               <div class="q-gutter-md row vo2">
@@ -125,7 +125,12 @@
                   </q-icon>
                 </template>
               </q-input>
-              <q-btn class="no-margin btn-grad-header text-h6"> CHECK</q-btn>
+              <q-btn
+                @click="estimator"
+                class="no-margin btn-grad-header text-h6"
+              >
+                CHECK</q-btn
+              >
             </q-card>
           </div>
         </q-carousel-slide>
@@ -393,7 +398,9 @@
                   </q-icon>
                 </template>
               </q-input>
-              <q-btn size="md" class="dense btn-grad-header">CHECK</q-btn>
+              <q-btn size="md" class="dense btn-grad-header" @click="estimator"
+                >CHECK</q-btn
+              >
             </q-card>
           </div>
         </q-carousel-slide>
@@ -802,83 +809,6 @@
             </q-card-actions>
           </q-card>
         </q-dialog> -->
-        <q-dialog v-model="wizard">
-          <q-card
-            style="width: 90vw; max-width: 90vw"
-            class="text-uppercase estimator"
-          >
-            <q-form>
-              <q-card-section class="text-center">
-                <h4 class="no-margin text-secondary">
-                  Curious about how much you can improve using EXPONENTIAL
-                  RUNNING?
-                </h4>
-                <h6 class="no-margin text-white">
-                  Enter a current race result below to see your potential!
-                </h6>
-                <q-separator />
-              </q-card-section>
-              <q-card-section class="text-warning text-center">
-                <p class="q-pa-md text-body1">
-                  *A marathon time of four+ hours may NOT be an accurate
-                  indicator of your training pace. In this case a 5K or 10K time
-                  may be a much better indication of your fitness level and
-                  training pace. If you've never run a 5k or 10k go to a local
-                  track and run 4 laps as fast as possible (1600m) or run by
-                  yourself A MILE Race approximately (1609meters), and enter
-                  that time. If you have chosen the Newbies plan u just have to
-                  answer few questions which are on Beginners VO2 Max Interview
-                  questions.
-                </p>
-              </q-card-section>
-              <q-separator />
-              <q-card-section class="q-px-xl text-left">
-                <h5 class="no-margin text-secondary">
-                  Your Predicted Race Results
-                </h5>
-                <p class="text-body1 text-white">
-                  Below are your predicted VO2 Max values along with your
-                  current and predicted race times. These times are based on of
-                  Fully Completing a Minimum of a 24-week Exponential Running
-                  plan. We have found that many times our clients out-perform
-                  these predictions and run even faster after completing
-                  EXPONENTIAL RUNNING plan.
-                </p>
-              </q-card-section>
-              <q-separator />
-              <q-card-section class="row q-px-xl">
-                <div class="col">
-                  <h5 class="text-secondary">
-                    Your Current VO2 Max : <span class="text-white"></span>
-                  </h5>
-                  <h5 class="no-margin text-secondary">
-                    Your Current Racing Timing :
-                    <span class="text-white">30</span>
-                  </h5>
-                </div>
-                <div class="col">
-                  <h5 class="text-secondary">
-                    Your Predicted VO2 Max : <span class="text-white">30</span>
-                  </h5>
-                  <h5 class="text-secondary">
-                    Your Predicted Racing Timing :<span class="text-white"
-                      >30</span
-                    >
-                  </h5>
-                </div>
-              </q-card-section>
-              <q-card-actions class="q-px-xl">
-                <q-btn
-                  flat
-                  size="xl"
-                  label="Get Plan"
-                  class="q-px-xl q-pb-xl btn-grad"
-                  v-close-popup
-                />
-              </q-card-actions>
-            </q-form>
-          </q-card>
-        </q-dialog>
       </div>
     </div>
     <div class="mobile-only q-pt-md">
@@ -1330,6 +1260,131 @@
         </p>
       </div>
     </div>
+    <q-dialog v-model="wizard">
+      <q-card
+        style="width: 90vw; max-width: 90vw"
+        class="text-uppercase estimator"
+      >
+        <q-btn
+          round
+          @click="wizard = false"
+          class="absolute-top-right"
+          style="z-index: 999"
+        >
+          <q-icon name="close" color="white" />
+        </q-btn>
+        <q-form>
+          <q-card-section class="text-center">
+            <h4 class="desktop-only no-margin text-secondary">
+              Curious about how much you can improve using EXPONENTIAL RUNNING?
+            </h4>
+            <text class="mobile-only text-body1 text-left text-secondary">
+              Curious about how much you can improve using EXPONENTIAL RUNNING?
+            </text>
+            <h6 class="desktop-only no-margin text-white">
+              Enter a current race result below to see your potential!
+            </h6>
+            <br />
+            <q-separator />
+          </q-card-section>
+          <q-card-section class="desktop-only text-warning text-center">
+            <p class="q-pa-md text-body1">
+              *A marathon time of four+ hours may NOT be an accurate indicator
+              of your training pace. In this case a 5K or 10K time may be a much
+              better indication of your fitness level and training pace. If
+              you've never run a 5k or 10k go to a local track and run 4 laps as
+              fast as possible (1600m) or run by yourself A MILE Race
+              approximately (1609meters), and enter that time. If you have
+              chosen the Newbies plan u just have to answer few questions which
+              are on Beginners VO2 Max Interview questions.
+            </p>
+          </q-card-section>
+          <q-separator />
+          <q-card-section class="desktop-only q-px-xl text-left">
+            <h5 class="no-margin text-secondary">
+              Your Predicted Race Results
+            </h5>
+            <p class="text-body1 text-white">
+              Below are your predicted VO2 Max values along with your current
+              and predicted race times. These times are based on of Fully
+              Completing a Minimum of a 24-week Exponential Running plan. We
+              have found that many times our clients out-perform these
+              predictions and run even faster after completing EXPONENTIAL
+              RUNNING plan.
+            </p>
+          </q-card-section>
+          <q-card-section class="mobile-only q-px-sm text-left">
+            <p class="no-margin q-pb-sm text-body1 text-secondary">
+              Your Predicted Race Results
+            </p>
+
+            <p class="text-white mobileText">
+              Below are your predicted VO2 Max values along with your current
+              and predicted race times. These times are based on of Fully
+              Completing a Minimum of a 24-week Exponential Running plan. We
+              have found that many times our clients out-perform these
+              predictions and run even faster after completing EXPONENTIAL
+              RUNNING plan.
+            </p>
+          </q-card-section>
+          <q-separator />
+          <q-card-section class="desktop-only row q-px-xl">
+            <div class="col">
+              <h5 class="text-secondary">
+                Your Current VO2 Max :
+                <span class="text-white">{{ raceData.vDot }}</span>
+              </h5>
+              <h5 class="no-margin text-secondary">
+                Your Current Racing Timing :
+                <span class="text-white">{{ this.timeWithSeconds }}</span>
+              </h5>
+            </div>
+            <div class="col">
+              <h5 class="text-secondary">
+                Your Predicted VO2 Max :
+                <span class="text-white">30</span>
+              </h5>
+              <h5 class="text-secondary">
+                Your Predicted Racing Timing :<span class="text-white">30</span>
+              </h5>
+            </div>
+          </q-card-section>
+          <q-card-section class="mobile-only row q-px-sm">
+            <div class="col">
+              <p class="text-secondary">
+                Your Current <br />VO2 Max :
+                <span class="text-white">{{ raceData.vDot }}</span>
+              </p>
+              <p class="no-margin text-secondary">
+                Your <br />Current Racing<br />
+                Timing :
+                <span class="text-white">{{ this.timeWithSeconds }}</span>
+              </p>
+            </div>
+            <q-separator vertical />
+            <div class="col q-pl-sm">
+              <p class="text-secondary">
+                Your Predicted <br />VO2 Max :
+                <span class="text-white">30</span>
+              </p>
+              <p class="text-secondary">
+                Your <br />Predicted Racing<br />
+                Timing :<span class="text-white">30</span>
+              </p>
+            </div>
+          </q-card-section>
+          <q-card-actions class="q-px-xl" align="center">
+            <q-btn
+              flat
+              size="xl"
+              label="Get Plan"
+              class="q-px-xl q-pb-xl btn-grad"
+              v-close-popup
+            />
+          </q-card-actions>
+        </q-form>
+      </q-card>
+    </q-dialog>
   </q-page>
 </template>
 
@@ -1343,14 +1398,9 @@ export default {
   data() {
     return {
       raceData: {
-        vdot: [],
-        mile: [],
-        "5k": [],
-        "10K": [],
-        "10mile": [],
-        halfMarathon: [],
-        "25k": [],
-        marathon: [],
+        vDot: null,
+        estimatedTime: null,
+        currentTime: null,
       },
       autoplay: true,
       timeWithSeconds: "",
@@ -1448,19 +1498,45 @@ export default {
       });
     },
     estimator() {
-      let currentDistance = this.model.value;
-      let currentTime = this.timeWithSeconds;
+      // let now = moment();
+      let distance = this.model.value;
       const timeData = this.raceTimeData;
-      let prev;
-      let curr;
-      let closest;
-      let startTime = moment(currentTime, "HH:mm:ss");
+      this.raceData.currentTime = moment
+        .duration(this.timeWithSeconds)
+        .asSeconds();
+      // console.log("needle", currentTime);
+      // let vTime = moment(timeData[i][distance], "HH:mm:ss");
+      // let duration = moment.duration(endTime.diff(startTime));
+      // console.log(duration._milliseconds);
 
-      for (let i = 0; i < timeData.length; i++) {
-        let endTime = moment(timeData[i][currentDistance], "HH:mm:ss");
-        var duration = moment.duration(endTime.diff(startTime));
-        console.log(duration._milliseconds);
-      }
+      const mapped = timeData.map((x) =>
+        moment.duration(x[distance]).asSeconds()
+      );
+      // console.log(mapped);
+
+      // const needle = 8;
+      // let numbers = mapped;
+
+      // function isClosest(value) {
+      //   return value >= 10;
+      // }
+
+      // const output = numbers.filter((a, b) => {
+      //   return Math.abs(currentTime - a) - Math.abs(currentTime - b);
+      // });
+
+      // console.log(output[0]);
+
+      let counts = mapped;
+      let goal = this.raceData.currentTime;
+
+      var closest = counts.reduce(function (prev, curr) {
+        return Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev;
+      });
+
+      let nearestIndex = mapped.indexOf(closest);
+      this.raceData.vDot = timeData[nearestIndex].vDot;
+      this.wizard = true;
     },
 
     seedData() {
@@ -1636,5 +1712,9 @@ export default {
 
 .estimator {
   background: radial-gradient(circle, #3d7392 0%, #113448 100%);
+}
+
+.mobileText {
+  font-size: 12px;
 }
 </style>
