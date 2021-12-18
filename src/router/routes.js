@@ -21,6 +21,7 @@ const routes = [
     path: "/:catchAll(.*)*",
     component: () => import("pages/Error404.vue"),
   },
+  // { path: "/comingsoon", component: () => import("pages/ComingSoon.vue") },
 ];
 
 export default routes;

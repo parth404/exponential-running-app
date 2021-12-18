@@ -35,7 +35,7 @@
                 class="text-h6"
                 style="letter-spacing: 1px"
                 group="somegroup"
-                label="How can E.R. plans help me train and race better?"
+                label="How can EXPONENTIAL RUNNING plans help me train and race better?"
                 default-opened
                 header-class="text-primary"
               >
@@ -43,14 +43,14 @@
                   <q-card-section class="text-body1">
                     Our plans are hi tech have taken years of research,testing
                     and are scientifically proven to bring you for user friendly
-                    experience. E.R. plans gives you essential specifics on how
-                    to do workouts at the right intensity for the most
-                    beneficial training stimuli. Recovery running days are
-                    extended and shortened appropriately to give you an ideal
-                    boost in fitness. E.R. plans are written carefully with
-                    minimizing risk of injury. Ofourse its your responsibility
-                    to use it in a way that does not derail your training. The
-                    training is structured to
+                    experience. EXPONENTIAL RUNNING. plans gives you essential
+                    specifics on how to do workouts at the right intensity for
+                    the most beneficial training stimuli. Recovery running days
+                    are extended and shortened appropriately to give you an
+                    ideal boost in fitness. EXPONENTIAL RUNNING plans are
+                    written carefully with minimizing risk of injury. Ofourse
+                    its your responsibility to use it in a way that does not
+                    derail your training. The training is structured to
                     <b>“Race your best on the day that counts”</b> by
                     progressing you through a series of phases.
                   </q-card-section>
@@ -272,7 +272,7 @@
                 class="text-body1"
                 style="letter-spacing: 1px"
                 group="somegroup"
-                label="How can E.R. plans help me train and race better?"
+                label="How can EXPONENTIAL RUNNING plans help me train and race better?"
                 default-opened
                 header-class="text-primary"
               >
@@ -280,14 +280,14 @@
                   <q-card-section class="text-body2">
                     Our plans are hi tech have taken years of research,testing
                     and are scientifically proven to bring you for user friendly
-                    experience. E.R. plans gives you essential specifics on how
-                    to do workouts at the right intensity for the most
-                    beneficial training stimuli. Recovery running days are
-                    extended and shortened appropriately to give you an ideal
-                    boost in fitness. E.R. plans are written carefully with
-                    minimizing risk of injury. Ofourse its your responsibility
-                    to use it in a way that does not derail your training. The
-                    training is structured to
+                    experience. EXPONENTIAL RUNNING plans gives you essential
+                    specifics on how to do workouts at the right intensity for
+                    the most beneficial training stimuli. Recovery running days
+                    are extended and shortened appropriately to give you an
+                    ideal boost in fitness. EXPONENTIAL RUNNING plans are
+                    written carefully with minimizing risk of injury. Ofourse
+                    its your responsibility to use it in a way that does not
+                    derail your training. The training is structured to
                     <b>“Race your best on the day that counts”</b> by
                     progressing you through a series of phases.
                   </q-card-section>
@@ -504,7 +504,7 @@
 import { ref } from "vue";
 
 export default {
-  name: "PageIndex",
+  name: "Faq",
   data() {
     return {};
   },

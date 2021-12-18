@@ -18,57 +18,42 @@
         animated
         v-model="slide"
         arrows
-        navigation
         infinite
+        navigation
         :autoplay="autoplay"
-        height="55vh"
+        height="500px"
         @mouseenter="autoplay = false"
         class="desktop-only bg-primary"
       >
-        <q-carousel-slide class="no-padding" :name="1">
-          <q-img
-            src="~assets/hp-3.jpg"
-            style="height: 500px; width: 70%"
-            fit="fill"
-          />
-          <div
-            class="absolute-right"
-            style="
-              height: 500px;
-              width: 50%;
-              background: linear-gradient(
-                270deg,
-                rgba(17, 52, 72, 1) 6%,
-                rgba(17, 52, 72, 1) 17%,
-                rgba(17, 52, 72, 1) 48%,
-                rgba(17, 52, 72, 0.9780287114845938) 72%,
-                rgba(17, 52, 72, 0.8155637254901961) 84%,
-                rgba(17, 52, 72, 0.5410539215686274) 92%,
-                rgba(255, 255, 255, 0) 100%
-              );
-            "
-          >
+        <q-carousel-slide class="no-padding no-wrap column" :name="1">
+          <div class="row fit justify-start items-center q-gutter-xs no-wrap">
+            <q-img
+              class="col-8 full-height"
+              src="~assets/hp-3.jpg"
+              fit="fill"
+            />
             <q-card
               class="
                 cta1
-                q-ma-xl
+                q-ml-xl
                 text-left
-                absolute-right
+                col-3
                 q-pa-md
                 text-uppercase text-secondary
               "
               style="
-                width: 50%;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(82, 192, 153);
               "
             >
-              <h3
+              <h4
                 class="no-margin q-pa-md titleFont text-secondary text-center"
               >
-                RACE TIME ESTIMATOR
-              </h3>
-              <h6 class="text-white no-margin">Enter your recent race time</h6>
+                RACE <br />ESTIMATOR
+              </h4>
+              <h6 class="text-body1 text-white no-margin">
+                Enter your recent race time
+              </h6>
               <div class="q-gutter-md row vo2">
                 <q-select
                   label="Select Distance"
@@ -134,52 +119,35 @@
             </q-card>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide class="no-padding" :name="2">
-          <q-img
-            src="~assets/hp-1.jpg"
-            style="height: 500px; width: 70%"
-            fit="fill"
-          />
-          <div
-            class="absolute-right"
-            style="
-              height: 500px;
-              width: 50%;
-              background: linear-gradient(
-                270deg,
-                rgba(17, 52, 72, 1) 6%,
-                rgba(17, 52, 72, 1) 17%,
-                rgba(17, 52, 72, 1) 48%,
-                rgba(17, 52, 72, 0.9780287114845938) 72%,
-                rgba(17, 52, 72, 0.8155637254901961) 84%,
-                rgba(17, 52, 72, 0.5410539215686274) 92%,
-                rgba(255, 255, 255, 0) 100%
-              );
-            "
-          >
+        <q-carousel-slide class="column no-padding" :name="2">
+          <div class="row fit justify-start items-center q-gutter-xs no-wrap">
+            <q-img
+              class="col-8 full-height"
+              src="~assets/hp-1.jpg"
+              fit="fill"
+            />
             <q-card
               class="
                 cta1
-                q-ma-xl
+                q-ml-xl
                 text-left
-                absolute-right
+                col-3
                 q-pa-md
                 text-uppercase text-secondary
               "
               style="
-                width: 50%;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(82, 192, 153);
               "
             >
-              <h3
+              <h4
                 class="no-margin q-pa-md titleFont text-secondary text-center"
               >
                 FOR SEASONED RUNNERS
-              </h3>
-              <h5 class="q-pt-sm no-margin text-center text-white">
+              </h4>
+              <h6 class="q-pt-sm no-margin text-center text-white">
                 SEEKING PERSONAL PEAK PERFORMANCE
-              </h5>
+              </h6>
               <div class="q-mt-xs row justify-center">
                 <q-btn
                   @click="scrollTo('runningMenu')"
@@ -190,53 +158,36 @@
             </q-card>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide class="no-padding" :name="3">
-          <q-img
-            src="~assets/hp-2.jpg"
-            style="height: 500px; width: 70%"
-            fit="fill"
-          />
-          <div
-            class="absolute-right"
-            style="
-              height: 500px;
-              width: 50%;
-              background: linear-gradient(
-                270deg,
-                rgba(17, 52, 72, 1) 6%,
-                rgba(17, 52, 72, 1) 17%,
-                rgba(17, 52, 72, 1) 48%,
-                rgba(17, 52, 72, 0.9780287114845938) 72%,
-                rgba(17, 52, 72, 0.8155637254901961) 84%,
-                rgba(17, 52, 72, 0.5410539215686274) 92%,
-                rgba(255, 255, 255, 0) 100%
-              );
-            "
-          >
+        <q-carousel-slide class="no-padding column" :name="3">
+          <div class="row fit justify-start items-center q-gutter-xs no-wrap">
+            <q-img
+              class="col-8 full-height"
+              src="~assets/hp-2.jpg"
+              fit="fill"
+            />
             <q-card
               class="
                 cta1
-                q-ma-xl
+                q-ml-xl
                 text-left
-                absolute-right
+                col-3
                 q-pa-md
                 text-uppercase text-secondary
               "
               style="
-                width: 50%;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(82, 192, 153);
               "
             >
-              <h3
+              <h4
                 class="no-margin q-pa-md titleFont text-secondary text-center"
               >
                 CUSTOMISED & INDIVIDUAL
-              </h3>
-              <h5 class="q-pt-sm no-margin text-center text-white">
+              </h4>
+              <h6 class="q-pt-sm q-px-xs no-margin text-center text-white">
                 See how our plans are tailored for you
-              </h5>
-              <div class="q-mt-xl row justify-center">
+              </h6>
+              <div class="q-mt-lg row justify-center">
                 <q-btn
                   @click="scrollTo('custom')"
                   class="q-mt-lg btn-grad-header text-h5"
@@ -246,53 +197,36 @@
             </q-card>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide class="no-padding" :name="4">
-          <q-img
-            src="~assets/hp-4.jpg"
-            style="height: 500px; width: 70%"
-            fit="fill"
-          />
-          <div
-            class="absolute-right"
-            style="
-              height: 500px;
-              width: 50%;
-              background: linear-gradient(
-                270deg,
-                rgba(17, 52, 72, 1) 6%,
-                rgba(17, 52, 72, 1) 17%,
-                rgba(17, 52, 72, 1) 48%,
-                rgba(17, 52, 72, 0.9780287114845938) 72%,
-                rgba(17, 52, 72, 0.8155637254901961) 84%,
-                rgba(17, 52, 72, 0.5410539215686274) 92%,
-                rgba(255, 255, 255, 0) 100%
-              );
-            "
-          >
+        <q-carousel-slide class="no-padding column" :name="4">
+          <div class="row fit justify-start items-center q-gutter-xs no-wrap">
+            <q-img
+              class="col-8 full-height"
+              src="~assets/hp-4.jpg"
+              fit="fill"
+            />
             <q-card
               class="
                 cta1
-                q-ma-xl
+                q-ml-xl
                 text-left
-                absolute-right
+                col-3
                 q-pa-md
                 text-uppercase text-secondary
               "
               style="
-                width: 50%;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(82, 192, 153);
               "
             >
-              <h3
+              <h4
                 class="no-margin q-pa-md titleFont text-secondary text-center"
               >
                 EXPONENTIAL RUNNING
-              </h3>
-              <h5 class="q-pt-md no-margin text-center text-white">
+              </h4>
+              <h6 class="q-pt-md no-margin text-center text-white">
                 Make The Winner's Choice
-              </h5>
-              <div class="q-mt-xl row justify-center">
+              </h6>
+              <div class="q-mt-lg row justify-center">
                 <q-btn
                   @click="scrollTo('plans')"
                   class="q-mt-lg btn-grad-header text-h5"
@@ -309,33 +243,23 @@
         v-model="slide"
         swipeable
         infinite
-        :autoplay="autoplay"
-        height="60vh"
-        @mouseenter="autoplay = false"
+        :autoplay="500000"
         class="mobile-only"
         style="background: rgba(17, 52, 72, 0)"
       >
         <q-carousel-slide class="no-padding" :name="1">
-          <q-img src="~assets/hp-3.jpg" style="height: 35vh" fit="fill" />
-          <div
-            class="absolute-bottom q-mb-xl text-white text-left"
-            style="height: 35vh"
-          >
+          <div class="column fit items-center no-wrap">
+            <q-img class="column" src="~assets/hp-3.jpg" fit="fill" />
             <q-card
-              class="
-                cta1
-                text-center
-                absolute-center
-                text-uppercase text-secondary
-              "
+              class="cta1 text-center full-width text-uppercase text-secondary"
               style="
-                width: 95vw;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
+                bottom: 30px;
               "
             >
               <h5 class="no-margin titleFont text-secondary q-pt-sm">
-                RACE TIME<br />
+                RACE<br />
                 ESTIMATOR
               </h5>
               <span class="text-white text-caption2"
@@ -343,6 +267,7 @@
               >
               <div class="row vo2">
                 <q-select
+                  dense
                   label="Select Distance"
                   label-color="secondary"
                   color="teal"
@@ -358,6 +283,7 @@
               </div>
               <q-input
                 outlined
+                dense
                 color="teal"
                 label="Recent Race Time"
                 label-color="secondary"
@@ -405,18 +331,15 @@
           </div>
         </q-carousel-slide>
         <q-carousel-slide class="no-padding" :name="2">
-          <q-img src="~assets/hp-1.jpg" style="height: 30vh" fit="fill" />
-
-          <div
-            class="absolute-bottom text-white text-left"
-            style="height: 35vh"
-          >
+          <div class="column fit items-center no-wrap">
+            <q-img class="column" src="~assets/hp-1.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center text-uppercase q-mx-sm text-secondary"
+              class="cta1 text-center full-width text-uppercase text-secondary"
               style="
                 max-height: 45vh;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
+                bottom: 30px;
               "
             >
               <h5
@@ -443,17 +366,15 @@
           </div>
         </q-carousel-slide>
         <q-carousel-slide class="no-padding" :name="3">
-          <q-img src="~assets/hp-2.jpg" style="height: 30vh" fit="fill" />
-          <div
-            class="absolute-bottom text-white text-left"
-            style="height: 35vh"
-          >
+          <div class="column fit items-center no-wrap">
+            <q-img class="column" src="~assets/hp-2.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center text-uppercase q-mx-sm text-secondary"
+              class="cta1 text-center full-width text-uppercase text-secondary"
               style="
-                max-height: 42vh;
+                max-height: 45vh;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
+                bottom: 30px;
               "
             >
               <h5 class="no-margin q-px-xl q-pt-md titleFont text-secondary">
@@ -464,7 +385,7 @@
               </p>
               <q-btn
                 size="md"
-                @click="scrollTo('runningMenu1')"
+                @click="scrollTo('custom1')"
                 class="dense btn-grad-header"
                 >EXPLORE</q-btn
               >
@@ -472,17 +393,15 @@
           </div>
         </q-carousel-slide>
         <q-carousel-slide class="no-padding" :name="4">
-          <q-img src="~assets/hp-4.jpg" style="height: 30vh" fit="fill" />
-          <div
-            class="absolute-bottom text-white text-left"
-            style="height: 35vh"
-          >
+          <div class="column fit items-center no-wrap">
+            <q-img class="column" src="~assets/hp-4.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center text-uppercase q-mx-sm text-secondary"
+              class="cta1 text-center full-width text-uppercase text-secondary"
               style="
-                max-height: 40vh;
+                max-height: 45vh;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
+                bottom: 30px;
               "
             >
               <h5 class="no-margin q-px-xl q-pt-md titleFont text-secondary">
@@ -575,7 +494,9 @@
 
     <div class="row mobile-only text-center justify-center" id="intro">
       <div class="col-11">
-        <h4 class="text-uppercase titleFont">TRAIN WITH A PURPOSE</h4>
+        <h4 class="text-uppercase titleFont no-margin q-pb-lg q-pt-md">
+          TRAIN WITH A PURPOSE
+        </h4>
         <div class="row">
           <div class="col-md-5 text-weight-">
             <p class="text-h6 text-left">
