@@ -28,7 +28,7 @@
         <h3 class="text-weight-regular text-uppercase titleFont">
           Our plans are different:
         </h3>
-        <div class="row q-py-xl q-mt-xl">
+        <div class="row justify-around q-py-xl q-mt-xl">
           <div class="col-md-5 q-pr-xl">
             <p class="text-body1 text-left">
               <b class="text-h6 text-uppercase">All</b> of our plans are derived
@@ -45,15 +45,7 @@
               boost in fitness.  Most other plans do not take this kind of
               prioritization into consideration. Our Exponential running
               guideline gives you the information you need to make the plan more
-              specific to your needs and the race you’re training for.
-            </p>
-            <p
-              class="
-                text-body1
-                q-mr-xl q-pr-xl q-pt-lg
-                text-left text-weight-regular
-              "
-            >
+              specific to your needs and the race you’re training for.<br /><br />
               We realize that great coaching is both a science and an art – and
               we’ve used this philosophy (as well as knowledge gained from our
               own careers as runners) along with experience from coaching many
@@ -65,7 +57,8 @@
           <div class="col">
             <q-img
               src="~assets/73.jpg"
-              style="border-radius: 20px; height: 100%"
+              fit="fill"
+              style="border-radius: 20px"
             />
           </div>
         </div>
@@ -248,7 +241,8 @@
           <div class="col">
             <q-img
               src="~assets/pc-3.jpg"
-              style="border-radius: 20px; height: 100%; object-fit: contain"
+              fit="fill"
+              style="border-radius: 20px"
             />
           </div>
           <div class="col-md-5 q-pr-xl">
@@ -321,7 +315,8 @@
           <div class="col">
             <q-img
               src="~assets/20.jpg"
-              style="border-radius: 20px; height: 100%; object-fit: contain"
+              fit="fill"
+              style="border-radius: 20px"
             />
           </div>
         </div>

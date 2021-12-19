@@ -61,40 +61,34 @@
                 >
               </li>
             </ul>
-            <p class="text-body1 text-left">
-              <b>Here</b> at Exponential Running we want to give you a training
-              plan that is in balance with your life. Running should add to the
-              quality of your life while not taking away from other things that
-              are important to you. We pride ourselves on giving training plans
-              that work with people’s schedules, while still making sure people
-              can reach their goals. We’ll view you not only as an athlete, but
-              as a person with other responsibilities and passions. Our goal is
-              to make runners faster, but when possible we hope to also help
-              people figure out how to use running as a tool to improve their
-              lives.
-            </p>
-            <p
-              class="
-                text-body1
-                q-mr-xl q-pr-xl q-pt-lg
-                text-left text-weight-regular
-              "
-            >
-              While we have studied a variety of training philosophies and will
-              put together a plan best suited for you, the core of all training
-              plans are based on how you are feeling. Inner technology is better
-              than anything you can get from a computer.” While we believe GPS
-              watches and heart rate monitors can be useful tools (that we do
-              use), we’ll be looking at how you’re feeling on a daily basis to
-              make sure your training is ideal for you.
-            </p>
           </div>
           <div class="col">
             <q-img
-              src="~assets/75.jpg"
-              style="border-radius: 20px; height: 100%"
+              fit="fill"
+              src="~assets/vc.webp"
+              style="border-radius: 20px; top: -50px"
             />
           </div>
+          <p class="text-body1 text-left">
+            <b>Here</b> at Exponential Running we want to give you a training
+            plan that is in balance with your life. Running should add to the
+            quality of your life while not taking away from other things that
+            are important to you. We pride ourselves on giving training plans
+            that work with people’s schedules, while still making sure people
+            can reach their goals. We’ll view you not only as an athlete, but as
+            a person with other responsibilities and passions. Our goal is to
+            make runners faster, but when possible we hope to also help people
+            figure out how to use running as a tool to improve their lives.
+          </p>
+          <p class="text-body1 q-pt-lg text-left text-weight-regular">
+            While we have studied a variety of training philosophies and will
+            put together a plan best suited for you, the core of all training
+            plans are based on how you are feeling. Inner technology is better
+            than anything you can get from a computer.” While we believe GPS
+            watches and heart rate monitors can be useful tools (that we do
+            use), we’ll be looking at how you’re feeling on a daily basis to
+            make sure your training is ideal for you.
+          </p>
         </div>
       </div>
     </div>
@@ -104,6 +98,9 @@
           One to One Virtual Coaching services
         </h5>
         <div class="row">
+          <div class="col">
+            <q-img src="~assets/vc.webp" style="border-radius: 20px" />
+          </div>
           <div class="col-md-5">
             <ul class="text-body2 no-padding q-ml-md text-left q-gutter-y-sm">
               <li>
@@ -156,12 +153,6 @@
               make sure your training is ideal for you.
             </p>
           </div>
-          <div class="col">
-            <q-img
-              src="~assets/75.jpg"
-              style="border-radius: 20px; height: 100%"
-            />
-          </div>
         </div>
       </div>
     </div>
@@ -174,7 +165,8 @@
           <div class="col">
             <q-img
               src="~assets/52.jpeg"
-              style="border-radius: 20px; height: 100%; object-fit: contain"
+              fit="fill"
+              style="border-radius: 20px; height: 100%"
             />
           </div>
           <div class="col">
@@ -334,24 +326,35 @@
         >
           ( LIMITED SLOTS AVAILABLE )
         </h6>
-        <ul
-          class="
-            text-h6 text-weight-regular
-            q-my-xl q-py-xl q-gutter-y-md
-            text-left
-          "
-        >
-          <li>Enjoy 100% attention for maximum results.</li>
-          <li>
-            Reap the benefits of a personal running coach who knows you, your
-            lifestyle, your temperament and your potential.
-          </li>
-          <li>
-            Explore all aspects of running with your coach: Technique,
-            recovery,nutrition, footwear, pacing, racing and goal setting.
-          </li>
-          <li>Long term planning and development.</li>
-        </ul>
+        <div class="row q-mt-xl">
+          <div class="col">
+            <ul
+              class="
+                text-h6 text-weight-regular
+                q-my-xl q-py-xl q-gutter-y-md
+                text-left
+              "
+            >
+              <li>Enjoy 100% attention for maximum results.</li>
+              <li>
+                Reap the benefits of a personal running coach who knows you,
+                your lifestyle, your temperament and your potential.
+              </li>
+              <li>
+                Explore all aspects of running with your coach: Technique,
+                recovery,nutrition, footwear, pacing, racing and goal setting.
+              </li>
+              <li>Long term planning and development.</li>
+            </ul>
+          </div>
+          <div class="col">
+            <q-img
+              fit="fill"
+              src="~assets/75.jpg"
+              style="border-radius: 20px"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <div class="row mobile-only text-center justify-center">
@@ -387,6 +390,9 @@
           </li>
           <li>Long term planning and development.</li>
         </ul>
+        <div class="col">
+          <q-img fit="fill" src="~assets/75.jpg" style="border-radius: 20px" />
+        </div>
       </div>
     </div>
     <div class="row desktop-only text-center justify-center q-pb-xl">

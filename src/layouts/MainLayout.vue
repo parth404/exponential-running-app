@@ -63,30 +63,22 @@
             label="CONTACT"
             style="width: 80px"
           />
-          <q-route-tab
-            class="no-padding"
-            to="/contact"
-            style="width: 50px"
-            name="social1"
-          >
-            <q-avatar
-              size="30px"
-              color="blue"
-              text-color="white"
-              icon="facebook"
-          /></q-route-tab>
-          <q-route-tab
-            class="no-padding"
-            style="width: 50px"
-            to="/contact"
-            name="social2"
-          >
-            <q-avatar
-              class="insta"
-              size="30px"
-              text-color="white"
-              icon="fab fa-instagram"
-            />
+          <q-route-tab class="no-padding" style="width: 50px" name="social1">
+            <a
+              href="https://www.facebook.com/OnlineTrainingPlansforMarathonRunners/"
+            >
+              <q-avatar
+                size="30px"
+                color="blue"
+                text-color="white"
+                icon="facebook" /></a
+          ></q-route-tab>
+          <q-route-tab class="no-padding" style="width: 50px" name="social2">
+            <a href="https://www.instagram.com/amitmy/">
+              <q-avatar class="insta" size="30px" text-color="white">
+                <q-img src="~/assets/insta.png" />
+              </q-avatar>
+            </a>
           </q-route-tab>
         </q-tabs>
         <q-btn
@@ -155,20 +147,22 @@
                 name="contact"
                 label="CONTACT"
               />
-              <q-route-tab class="no-padding" to="/contact" name="social1">
-                <q-avatar
-                  size="30px"
-                  color="blue"
-                  text-color="white"
-                  icon="facebook"
-              /></q-route-tab>
-              <q-route-tab class="no-padding" to="/contact" name="social2">
-                <q-avatar
-                  class="insta"
-                  size="30px"
-                  text-color="white"
-                  icon="fab fa-instagram"
-                />
+              <q-route-tab class="no-padding" name="social1">
+                <a
+                  href="https://www.facebook.com/OnlineTrainingPlansforMarathonRunners/"
+                >
+                  <q-avatar
+                    size="30px"
+                    color="blue"
+                    text-color="white"
+                    icon="facebook" /></a
+              ></q-route-tab>
+              <q-route-tab class="no-padding" name="social2">
+                <a href="https://www.instagram.com/amitmy/">
+                  <q-avatar class="insta" size="30px" text-color="white">
+                    <q-img src="~/assets/insta.png" />
+                  </q-avatar>
+                </a>
               </q-route-tab>
               <q-toolbar class="text-center">
                 <q-toolbar-title class="text-caption q-py-lg"
