@@ -15,7 +15,10 @@
         <q-icon color="secondary" name="keyboard_arrow_up" />
       </q-btn> -->
     </div>
-    <q-banner class="desktop-only q-mb-xl cta-header1 text-center">
+    <q-banner
+      id="topBanner"
+      class="desktop-only q-mb-xl cta-header1 text-center"
+    >
       <h4 class="text-uppercase text-weight-bold" style="letter-spacing: 4px">
         Contact Us
       </h4>
@@ -39,29 +42,29 @@
                 Exponential Running, Send us your message and we will be in
                 touch with you promptly.
               </p>
-              <q-form
+              <form
                 class="q-mt-xl q-gutter-y-sm"
-                greedy
-                @submit="onSubmit"
-                @reset="onReset"
+                ref="form"
+                @submit.prevent="sendEmail"
               >
                 <q-input
                   outlined
-                  v-model="name"
-                  label="Your name *"
-                  hint="Name and surname"
+                  v-model="user.name"
+                  label="Your full name *"
+                  name="user_name"
                   lazy-rules
                   :rules="[
                     (val) =>
-                      (val && val.length > 0) || 'Please enter your name',
+                      (val && val.length > 0) || 'Please enter your full name',
                   ]"
                 />
                 <q-input
                   outlined
                   type="email"
                   label="Email"
+                  name="user_email"
                   required
-                  v-model="email"
+                  v-model="user.email"
                   lazy-rules
                   :rules="[
                     (val) =>
@@ -71,8 +74,9 @@
                 <q-input
                   outlined
                   type="textarea"
+                  name="message"
                   label="Message"
-                  v-model="message"
+                  v-model="user.message"
                   lazy-rules
                   :rules="[
                     (val) => (val && val.length > 0) || 'Please type something',
@@ -81,7 +85,7 @@
                 <div>
                   <q-btn label="Submit" type="submit" class="btn-grad" />
                 </div>
-              </q-form>
+              </form>
             </q-card-section>
           </q-card-section>
         </q-card>
@@ -104,16 +108,15 @@
                 touch with you promptly.
               </p>
               <q-form
+                ref="form"
                 class="q-mt-sm q-gutter-y-xs text-body1"
-                greedy
-                @submit="onSubmit"
-                @reset="onReset"
+                @submit.prevent="sendEmail"
               >
                 <q-input
                   outlined
-                  v-model="name"
-                  label="Your name *"
-                  hint="Name and surname"
+                  name="user_name"
+                  v-model="user.name"
+                  label="Your full name *"
                   lazy-rules
                   :rules="[
                     (val) =>
@@ -123,9 +126,10 @@
                 <q-input
                   outlined
                   type="email"
+                  name="user_email"
                   label="Email"
                   required
-                  v-model="email"
+                  v-model="user.email"
                   lazy-rules
                   :rules="[
                     (val) =>
@@ -135,8 +139,9 @@
                 <q-input
                   outlined
                   type="textarea"
+                  name="message"
                   label="Message"
-                  v-model="message"
+                  v-model="user.message"
                   lazy-rules
                   :rules="[
                     (val) => (val && val.length > 0) || 'Please type something',
@@ -156,19 +161,59 @@
 
 <script>
 import { ref } from "vue";
+import emailjs from "emailjs-com";
 
 export default {
   name: "PageIndex",
   data() {
     return {
-      name: "",
-      email: "",
-      message: "",
+      user: {
+        service_id: "service_1vcpf2n",
+        template_id: "template_ixdgryo",
+        user_id: "user_Cjs5V1vk3Kt2XYd69dbPu",
+        name: "",
+        email: "",
+        message: "",
+      },
     };
   },
   methods: {
     toTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    reset() {
+      this.user.name = null;
+      this.user.email = null;
+      this.user.message = null;
+      this.$router.go(0);
+    },
+    sendEmail() {
+      emailjs
+        .sendForm(
+          this.user.service_id,
+          this.user.template_id,
+          this.$refs.form,
+          this.user.user_id
+        )
+        .then(
+          (result) => {
+            this.$q.notify({
+              position: "top",
+              type: "positive",
+              message: "Your Message Has Been Delivered!",
+            });
+            this.toTop();
+            this.reset();
+          },
+          (error) => {
+            this.$q.notify({
+              position: "top",
+              type: "negative",
+              message: "Failed To Send Message",
+            });
+            console.log(error);
+          }
+        );
     },
   },
 };
