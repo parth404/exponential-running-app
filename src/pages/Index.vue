@@ -1208,13 +1208,15 @@
       >
         <q-btn
           round
+          color="white"
+          size="sm"
           @click="wizard = false"
           class="absolute-top-right"
           style="z-index: 999"
         >
-          <q-icon name="close" color="white" />
+          <q-icon name="close" color="primary" />
         </q-btn>
-        <q-form>
+        <q-form v-if="isValid">
           <q-card-section class="text-center">
             <h4 class="desktop-only no-margin text-secondary">
               Curious about how much you can improve using EXPONENTIAL RUNNING?
@@ -1228,8 +1230,20 @@
             <br />
             <q-separator />
           </q-card-section>
-          <q-card-section class="desktop-only text-warning text-center">
+          <q-card-section
+            class="desktop-only no-padding q-mx-sm text-white text-left"
+          >
             <p class="q-pa-md text-body1">
+              To determine your current VO2 Max (Your level of fitness starting
+              point) value please put the recent race time. Once we know this
+              value, we will be able to calculate how much improvement you can
+              make over the weeks leading up to your race.
+            </p>
+          </q-card-section>
+          <q-card-section
+            class="desktop-only no-padding q-mx-sm text-warning text-left"
+          >
+            <p class="text-body1 q-pa-md">
               *A marathon time of four+ hours may NOT be an accurate indicator
               of your training pace. In this case a 5K or 10K time may be a much
               better indication of your fitness level and training pace. If
@@ -1240,7 +1254,24 @@
               are on Beginners VO2 Max Interview questions.
             </p>
           </q-card-section>
-          <q-card-section class="mobile-only text-warning text-left">
+          <q-card-section
+            class="mobile-only no-padding q-mb-sm q-mx-sm text-white text-left"
+          >
+            <p class="mobileText2">
+              To determine your current VO2 Max (Your level of fitness starting
+              point) value please put the recent race time. Once we know this
+              value, we will be able to calculate how much improvement you can
+              make over the weeks leading up to your race.
+            </p>
+          </q-card-section>
+          <q-card-section
+            class="
+              mobile-only
+              no-padding
+              q-mb-sm q-mx-sm
+              text-warning text-left
+            "
+          >
             <p class="mobileText2">
               *A marathon time of four+ hours may NOT be an accurate indicator
               of your training pace. In this case a 5K or 10K time may be a much
@@ -1253,7 +1284,7 @@
             </p>
           </q-card-section>
           <q-separator />
-          <q-card-section class="desktop-only q-px-xl text-left">
+          <q-card-section class="desktop-only no-padding q-mx-lg text-left">
             <h5 class="no-margin text-secondary">
               Your Predicted Race Results
             </h5>
@@ -1271,7 +1302,7 @@
               Your Predicted Race Results
             </p>
 
-            <p class="text-white mobileText">
+            <p class="text-white mobileText2">
               Below are your predicted VO2 Max values along with your current
               and predicted race times. These times are based on of Fully
               Completing a Minimum of a 24-week Exponential Running plan. We
@@ -1303,9 +1334,18 @@
             <div class="col">
               <h5 class="text-secondary">
                 Your Predicted VO2 Max :
-                <span class="text-white">30</span>
+                <span class="text-white">{{ estimateData.vDot }}</span>
               </h5>
               <h5 class="text-secondary">Your Predicted Racing Timing :</h5>
+              <div>
+                <h6
+                  class="text-secondary"
+                  v-for="(item, key, index) in estimateTime"
+                  :key="index"
+                >
+                  <b>{{ key }}</b> : <span class="text-white">{{ item }}</span>
+                </h6>
+              </div>
             </div>
           </q-card-section>
           <q-card-section class="mobile-only row q-px-sm">
@@ -1354,6 +1394,24 @@
             />
           </q-card-actions>
         </q-form>
+        <div v-else>
+          <div class="mobile-only q-pa-md text-white">
+            <h6>
+              Sorry we could not find any results with the entered duration
+            </h6>
+            <h6 class="text-secondary">
+              Please Enter A Different Duration And Try Again.
+            </h6>
+          </div>
+          <div class="desktop-only q-pa-md text-center text-white">
+            <h4>
+              Sorry we could not find any results with the entered duration
+            </h4>
+            <h4 class="text-secondary">
+              Please Enter A Different Duration And Try Again.
+            </h4>
+          </div>
+        </div>
       </q-card>
     </q-dialog>
   </q-page>
@@ -1377,6 +1435,7 @@ export default {
       estimateTime: {},
       autoplay: true,
       timeWithSeconds: "",
+      isValid: false,
       slide: ref(1),
       slide2: ref(1),
       group: ref(null),
@@ -1478,11 +1537,16 @@ export default {
       this.raceData.currentTime = moment
         .duration(this.timeWithSeconds)
         .asSeconds();
+      let min = moment.duration(timeData[0][distance]).asSeconds();
+      let max = moment.duration(timeData.slice(-1)[0][distance]).asSeconds();
+      this.isValid =
+        this.raceData.currentTime > min || this.raceData.currentTime < max
+          ? false
+          : true;
 
       const mapped = timeData.map((x) =>
         moment.duration(x[distance]).asSeconds()
       );
-
       let counts = [...mapped];
       let goal = this.raceData.currentTime;
 
@@ -1505,12 +1569,20 @@ export default {
       const estimateTime = {};
 
       Object.entries(estimateData).forEach(([key, value]) => {
-        key !== "estimate" && key !== "vDot"
+        key !== "estimate" &&
+        key !== "vDot" &&
+        key !== "1500" &&
+        key !== "3K" &&
+        key !== "2Mile"
           ? (estimateTime[key] = value)
           : null;
       });
       Object.entries(currentRaceData).forEach(([key, value]) => {
-        key !== "estimate" && key !== "vDot"
+        key !== "estimate" &&
+        key !== "vDot" &&
+        key !== "1500" &&
+        key !== "3K" &&
+        key !== "2Mile"
           ? (currentTimes[key] = value)
           : null;
       });

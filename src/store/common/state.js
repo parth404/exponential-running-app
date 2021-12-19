@@ -2,19 +2,6 @@ export default function () {
   return {
     raceTimeData: [
       {
-        1500: "",
-        estimate: "",
-        vDot: "",
-        mile: "",
-        "3K": "",
-        "2Mile": "",
-        "5K": "",
-        "10K": "",
-        "15K": "",
-        halfMarathon: "",
-        marathon: "",
-      },
-      {
         1500: "0:11:55",
         estimate: 6.65,
         vDot: 20,
