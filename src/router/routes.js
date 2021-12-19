@@ -12,6 +12,8 @@ const routes = [
       { path: "/faq", component: () => import("pages/Faq.vue") },
       { path: "/contact", component: () => import("pages/Contact.vue") },
       { path: "/legal", component: () => import("pages/Legal.vue") },
+      { path: "/comingsoon", component: () => import("pages/Coming.vue") },
+      { path: "/help", component: () => import("pages/Help.vue") },
     ],
   },
 
@@ -21,7 +23,6 @@ const routes = [
     path: "/:catchAll(.*)*",
     component: () => import("pages/Error404.vue"),
   },
-  // { path: "/comingsoon", component: () => import("pages/ComingSoon.vue") },
 ];
 
 export default routes;

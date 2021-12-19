@@ -240,10 +240,10 @@
 
       <q-carousel
         animated
-        v-model="slide"
+        v-model="slide2"
         swipeable
         infinite
-        :autoplay="500000"
+        :autoplay="false"
         class="mobile-only"
         style="background: rgba(17, 52, 72, 0)"
       >
@@ -251,11 +251,12 @@
           <div class="column fit items-center no-wrap">
             <q-img class="column" src="~assets/hp-3.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center full-width text-uppercase text-secondary"
+              class="cta1 text-center text-uppercase text-secondary"
               style="
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
                 bottom: 30px;
+                width: 98vw;
               "
             >
               <h5 class="no-margin titleFont text-secondary q-pt-sm">
@@ -334,12 +335,13 @@
           <div class="column fit items-center no-wrap">
             <q-img class="column" src="~assets/hp-1.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center full-width text-uppercase text-secondary"
+              class="cta1 text-center text-uppercase text-secondary"
               style="
                 max-height: 45vh;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
                 bottom: 30px;
+                width: 98vw;
               "
             >
               <h5
@@ -369,12 +371,13 @@
           <div class="column fit items-center no-wrap">
             <q-img class="column" src="~assets/hp-2.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center full-width text-uppercase text-secondary"
+              class="cta1 text-center text-uppercase text-secondary"
               style="
                 max-height: 45vh;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
                 bottom: 30px;
+                width: 98vw;
               "
             >
               <h5 class="no-margin q-px-xl q-pt-md titleFont text-secondary">
@@ -396,12 +399,13 @@
           <div class="column fit items-center no-wrap">
             <q-img class="column" src="~assets/hp-4.jpg" fit="fill" />
             <q-card
-              class="cta1 text-center full-width text-uppercase text-secondary"
+              class="cta1 text-center text-uppercase text-secondary"
               style="
                 max-height: 45vh;
                 border-radius: 20px;
                 box-shadow: 0 3px 10px rgb(1, 86, 134);
                 bottom: 30px;
+                width: 98vw;
               "
             >
               <h5 class="no-margin q-px-xl q-pt-md titleFont text-secondary">
@@ -835,7 +839,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377;</span>
         </q-card>
@@ -849,7 +855,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -863,7 +871,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -875,7 +885,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -887,7 +899,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -911,7 +925,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -927,7 +941,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -943,7 +957,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -961,7 +975,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -977,7 +991,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -1022,7 +1036,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -1034,7 +1050,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -1048,7 +1066,9 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="lg" dense class="btn-grad">SELECT PLAN</q-btn>
+            <q-btn size="lg" dense class="btn-grad" to="/comingsoon"
+              >SELECT PLAN</q-btn
+            >
           </q-card-actions>
           <span class="text-h5 money">&#8377; </span>
         </q-card>
@@ -1094,7 +1114,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -1110,7 +1130,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -1126,7 +1146,7 @@
           </q-card-section>
 
           <q-card-actions align="center">
-            <q-btn size="md" dense class="no-margin btn-grad"
+            <q-btn size="md" dense class="no-margin btn-grad" to="/comingsoon"
               >SELECT PLAN</q-btn
             >
           </q-card-actions>
@@ -1220,6 +1240,18 @@
               are on Beginners VO2 Max Interview questions.
             </p>
           </q-card-section>
+          <q-card-section class="mobile-only text-warning text-left">
+            <p class="mobileText2">
+              *A marathon time of four+ hours may NOT be an accurate indicator
+              of your training pace. In this case a 5K or 10K time may be a much
+              better indication of your fitness level and training pace. If
+              you've never run a 5k or 10k go to a local track and run 4 laps as
+              fast as possible (1600m) or run by yourself A MILE Race
+              approximately (1609meters), and enter that time. If you have
+              chosen the Newbies plan u just have to answer few questions which
+              are on Beginners VO2 Max Interview questions.
+            </p>
+          </q-card-section>
           <q-separator />
           <q-card-section class="desktop-only q-px-xl text-left">
             <h5 class="no-margin text-secondary">
@@ -1257,17 +1289,23 @@
               </h5>
               <h5 class="no-margin text-secondary">
                 Your Current Racing Timing :
-                <span class="text-white">{{ this.timeWithSeconds }}</span>
               </h5>
+              <div>
+                <h6
+                  class="text-secondary"
+                  v-for="(item, key, index) in currentTimes"
+                  :key="index"
+                >
+                  <b>{{ key }}</b> : <span class="text-white">{{ item }}</span>
+                </h6>
+              </div>
             </div>
             <div class="col">
               <h5 class="text-secondary">
                 Your Predicted VO2 Max :
                 <span class="text-white">30</span>
               </h5>
-              <h5 class="text-secondary">
-                Your Predicted Racing Timing :<span class="text-white">30</span>
-              </h5>
+              <h5 class="text-secondary">Your Predicted Racing Timing :</h5>
             </div>
           </q-card-section>
           <q-card-section class="mobile-only row q-px-sm">
@@ -1276,22 +1314,33 @@
                 Your Current <br />VO2 Max :
                 <span class="text-white">{{ raceData.vDot }}</span>
               </p>
-              <p class="no-margin text-secondary">
-                Your <br />Current Racing<br />
-                Timing :
-                <span class="text-white">{{ this.timeWithSeconds }}</span>
-              </p>
+              <p class="text-secondary">Your Current Racing Timing :</p>
+              <div>
+                <p
+                  class="text-secondary"
+                  v-for="(item, key, index) in currentTimes"
+                  :key="index"
+                >
+                  <b>{{ key }}</b> : <span class="text-white">{{ item }}</span>
+                </p>
+              </div>
             </div>
             <q-separator vertical />
             <div class="col q-pl-sm">
               <p class="text-secondary">
                 Your Predicted <br />VO2 Max :
-                <span class="text-white">30</span>
+                <span class="text-white">{{ estimateData.vDot }}</span>
               </p>
-              <p class="text-secondary">
-                Your <br />Predicted Racing<br />
-                Timing :<span class="text-white">30</span>
-              </p>
+              <p class="text-secondary">Your Predicted Racing Timing :</p>
+              <div>
+                <p
+                  class="text-secondary"
+                  v-for="(item, key, index) in estimateTime"
+                  :key="index"
+                >
+                  <b>{{ key }}</b> : <span class="text-white">{{ item }}</span>
+                </p>
+              </div>
             </div>
           </q-card-section>
           <q-card-actions class="q-px-xl" align="center">
@@ -1300,6 +1349,7 @@
               size="xl"
               label="Get Plan"
               class="q-px-xl q-pb-xl btn-grad"
+              to="/comingsoon"
               v-close-popup
             />
           </q-card-actions>
@@ -1320,12 +1370,15 @@ export default {
     return {
       raceData: {
         vDot: null,
-        estimatedTime: null,
-        currentTime: null,
+        1500: null,
       },
+      currentTimes: {},
+      estimateData: {},
+      estimateTime: {},
       autoplay: true,
       timeWithSeconds: "",
       slide: ref(1),
+      slide2: ref(1),
       group: ref(null),
       model: null,
       runXp: "",
@@ -1418,57 +1471,53 @@ export default {
         inline: "nearest",
       });
     },
+
     estimator() {
-      // let now = moment();
       let distance = this.model.value;
-      const timeData = this.raceTimeData;
+      const timeData = [...this.raceTimeData];
       this.raceData.currentTime = moment
         .duration(this.timeWithSeconds)
         .asSeconds();
-      // console.log("needle", currentTime);
-      // let vTime = moment(timeData[i][distance], "HH:mm:ss");
-      // let duration = moment.duration(endTime.diff(startTime));
-      // console.log(duration._milliseconds);
 
       const mapped = timeData.map((x) =>
         moment.duration(x[distance]).asSeconds()
       );
-      // console.log(mapped);
 
-      // const needle = 8;
-      // let numbers = mapped;
-
-      // function isClosest(value) {
-      //   return value >= 10;
-      // }
-
-      // const output = numbers.filter((a, b) => {
-      //   return Math.abs(currentTime - a) - Math.abs(currentTime - b);
-      // });
-
-      // console.log(output[0]);
-
-      let counts = mapped;
+      let counts = [...mapped];
       let goal = this.raceData.currentTime;
 
       var closest = counts.reduce(function (prev, curr) {
         return Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev;
       });
 
-      let nearestIndex = mapped.indexOf(closest);
-      this.raceData.vDot = timeData[nearestIndex].vDot;
-      this.wizard = true;
-    },
-
-    seedData() {
-      let vdot = [];
-      for (let i = 20; i < 85; i++) {
-        for (let j = i + 0.1; j <= i + 1; j += 0.1) {
-          vdot.push(Number(j.toFixed(1)));
-        }
+      const currentRaceData = timeData[mapped.indexOf(closest)];
+      this.raceData.vDot = currentRaceData.vDot;
+      const improveBy = (currentRaceData.vDot / 100) * currentRaceData.estimate;
+      function roundToTwo(num) {
+        return +(Math.round(num + "e+2") + "e-2");
       }
-      this.vdot = vdot;
-      console.log(this.raceTimeData);
+      const rounded = roundToTwo(improveBy);
+      const findVo2 = Math.round((currentRaceData.vDot + rounded) * 10) / 10;
+      const finalVo2 = findVo2 >= 85 ? 85 : findVo2;
+      const estimateData = timeData.find((x) => x.vDot === finalVo2);
+
+      const currentTimes = {};
+      const estimateTime = {};
+
+      Object.entries(estimateData).forEach(([key, value]) => {
+        key !== "estimate" && key !== "vDot"
+          ? (estimateTime[key] = value)
+          : null;
+      });
+      Object.entries(currentRaceData).forEach(([key, value]) => {
+        key !== "estimate" && key !== "vDot"
+          ? (currentTimes[key] = value)
+          : null;
+      });
+      this.currentTimes = { ...currentTimes };
+      this.estimateData = { ...estimateData };
+      this.estimateTime = estimateTime;
+      this.wizard = true;
     },
   },
   computed: {
@@ -1637,5 +1686,8 @@ export default {
 
 .mobileText {
   font-size: 12px;
+}
+.mobileText2 {
+  font-size: 9px;
 }
 </style>
