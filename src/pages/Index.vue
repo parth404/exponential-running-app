@@ -51,9 +51,40 @@
               >
                 RACE <br />ESTIMATOR
               </h4>
-              <h6 class="text-body1 text-white no-margin">
-                Enter your recent race time
-              </h6>
+              <div class="row justify-start q-mr-xs q-mb-sm">
+                <h6 class="col-11 text-body1 text-white no-margin">
+                  Enter your recent race time
+                </h6>
+                <div class="col">
+                  <q-btn round outline icon="question_mark" size="xs">
+                    <q-tooltip
+                      class="bg-white text-primary text-body2"
+                      style="width: 50vw"
+                      :offset="[10, 10]"
+                    >
+                      To determine your current VO2 Max value (Your level of
+                      fitness starting point) please put the recent race
+                      time.<br />
+                      Once we know this value, we will be able to calculate how
+                      much improvement you can make over the weeks leading up to
+                      your race.<q-space /><br />
+                      <span class="text-red"
+                        >*A marathon time of four+ hours may NOT be an accurate
+                        indicator of your training pace.<br />
+                        In this case a 5K or 10K time may be a much better
+                        indication of your fitness level and training pace.<br />
+                        If you've never run a 5k or 10k go to a local track and
+                        run 4 laps (1600m) or run by yourself A MILE Race
+                        approximately (1609meters), and enter that time.<br />
+                        Do go at your fastest pace, but don't bust yourself to
+                        squeeze every last second from yourself.<br />
+                        It will not give you a better plan and you don't want to
+                        start your training already wasted!!</span
+                      >
+                    </q-tooltip>
+                  </q-btn>
+                </div>
+              </div>
               <div class="q-gutter-md row vo2">
                 <q-select
                   label="Select Distance"
@@ -263,9 +294,46 @@
                 RACE<br />
                 ESTIMATOR
               </h5>
-              <span class="text-white text-caption2"
-                >Enter your recent race time</span
-              >
+              <div class="row justify-start q-mr-xs q-mb-sm">
+                <span class="col-11 text-caption2 text-white no-margin">
+                  Enter your recent race time
+                </span>
+                <div class="col">
+                  <q-btn
+                    round
+                    outline
+                    @click="showing = !showing"
+                    icon="question_mark"
+                    size="xs"
+                  >
+                  </q-btn>
+                  <q-tooltip
+                    v-model="showing"
+                    class="bg-white text-primary mobileText2"
+                    anchor="bottom start"
+                    self="top left"
+                  >
+                    To determine your current VO2 Max value (Your level of
+                    fitness starting point) please put the recent race time.<br />
+                    Once we know this value, we will be able to calculate how
+                    much improvement you can make over the weeks leading up to
+                    your race.<q-space /><br />
+                    <span class="text-red"
+                      >*A marathon time of four+ hours may NOT be an accurate
+                      indicator of your training pace.<br />
+                      In this case a 5K or 10K time may be a much better
+                      indication of your fitness level and training pace.<br />
+                      If you've never run a 5k or 10k go to a local track and
+                      run 4 laps (1600m) or run by yourself A MILE Race
+                      approximately (1609meters), and enter that time.<br />
+                      Do go at your fastest pace, but don't bust yourself to
+                      squeeze every last second from yourself.<br />
+                      It will not give you a better plan and you don't want to
+                      start your training already wasted!!</span
+                    >
+                  </q-tooltip>
+                </div>
+              </div>
               <div class="row vo2">
                 <q-select
                   dense
@@ -864,10 +932,12 @@
       </div>
       <div class="col-3 box-wrap q-px-md">
         <q-card class="my-card box text-white">
-          <q-card-section>
-            <h4 class="text-secondary q-pb-md text-weight-bold">
-              HALF MARATHON
-            </h4>
+          <q-card-section class="q-pt-xl">
+            <div class="text-secondary">
+              <h4 class="text-weight-bold no-margin q-pt-xs q-pb-md">
+                HALF <br />MARATHON
+              </h4>
+            </div>
           </q-card-section>
 
           <q-card-actions align="center">
@@ -1440,6 +1510,7 @@ export default {
       slide2: ref(1),
       group: ref(null),
       model: null,
+      showing: false,
       runXp: "",
       age: null,
       sex: "",

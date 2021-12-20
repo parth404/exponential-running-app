@@ -48,7 +48,7 @@
                     the most beneficial training stimuli. Recovery running days
                     are extended and shortened appropriately to give you an
                     ideal boost in fitness. EXPONENTIAL RUNNING plans are
-                    written carefully with minimizing risk of injury. Ofourse
+                    written carefully with minimizing risk of injury. Ofcourse
                     its your responsibility to use it in a way that does not
                     derail your training. The training is structured to
                     <b>“Race your best on the day that counts”</b> by
@@ -285,7 +285,7 @@
                     the most beneficial training stimuli. Recovery running days
                     are extended and shortened appropriately to give you an
                     ideal boost in fitness. EXPONENTIAL RUNNING plans are
-                    written carefully with minimizing risk of injury. Ofourse
+                    written carefully with minimizing risk of injury. Ofcourse
                     its your responsibility to use it in a way that does not
                     derail your training. The training is structured to
                     <b>“Race your best on the day that counts”</b> by

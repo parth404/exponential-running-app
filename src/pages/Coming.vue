@@ -4,14 +4,13 @@
       <div class="desktop-only absolute-center text-center col-8">
         <h2 class="titleFont">COMING SOON</h2>
         <h5>
-          Our premium plans will be available soon. In the meanwhile you can opt
-          for
+          Our plans will be available soon. In the meanwhile you can opt for
           <span class="text-uppercase text-weight-bold"
             >one to one virtual coaching</span
           >
           and
           <span class="text-uppercase text-weight-bold"
-            >one on one coaching</span
+            >one on one in person coaching</span
           >
           services
         </h5>
@@ -29,18 +28,17 @@
       <div class="col-9">
         <h4 class="text-center titleFont">COMING SOON</h4>
         <p>
-          Our premium plans will be available soon. In the meanwhile you can opt
-          for
+          Our plans will be available soon. In the meanwhile you can opt for
           <span class="text-uppercase text-weight-bold"
             >one to one virtual coaching</span
           >
           and
           <span class="text-uppercase text-weight-bold"
-            >one on one coaching</span
+            >one on one in person coaching</span
           >
           services
         </p>
-        <div>
+        <div class="text-center">
           <q-btn
             dense
             to="/coaching"

@@ -169,8 +169,8 @@
               style="border-radius: 20px"
             />
           </div>
-          <div class="col">
-            <p class="q-ml-md text-h6 text-right">
+          <div class="col vertical-middle q-py-xl">
+            <p class="q-ml-md text-body1 text-right q-py-lg">
               Running by feel you can learn to trust your body what it is ready
               for, leaving you confident, prepared and in best shape of your
               life
@@ -199,14 +199,15 @@
           <b>Plans</b> are customized to fit your schedule and specific needs
           and are much more detailed and interactive than our downloadable
           plans. We offer unlimited feedback to all athletes. If you’re
-          interested in monthly coaching, email us on : ________________After
-          that, we’ll get in contact with you to discuss your answers and get
-          your customized training schedule started along with a game plan to
-          let you in on what we’ll be having you do and why.  Its an initial
-          3-month commitment. We ask for the 3-month commitment because we put
-          in a lot of work upfront, not only making the first 2-3 week training
-          plans but coming up with an outline for future months to help you
-          reach your long and short-term goals.
+          interested in monthly coaching,
+          <a href="mailto:amit@exponentialrunning.com">email us</a>. After that,
+          we’ll get in contact with you to discuss your answers and get your
+          customized training schedule started along with a game plan to let you
+          in on what we’ll be having you do and why.  Its an initial 3-month
+          commitment. We ask for the 3-month commitment because we put in a lot
+          of work upfront, not only making the first 2-3 week training plans but
+          coming up with an outline for future months to help you reach your
+          long and short-term goals.
         </p>
         <p class="text-body1 text-left">
           We give weekly training plans at a time, but always make a long-term
@@ -221,8 +222,8 @@
           Please let us know if you have any questions!
         </p>
         <p class="text-body1 text-left">
-          Send an email to coach EMAIL LINK for more information. Call us /
-          Whatsapp us :
+          Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
+          more information.
         </p>
       </div>
     </div>
@@ -272,14 +273,15 @@
           <b>Plans</b> are customized to fit your schedule and specific needs
           and are much more detailed and interactive than our downloadable
           plans. We offer unlimited feedback to all athletes. If you’re
-          interested in monthly coaching, email us on : ________________After
-          that, we’ll get in contact with you to discuss your answers and get
-          your customized training schedule started along with a game plan to
-          let you in on what we’ll be having you do and why.  Its an initial
-          3-month commitment. We ask for the 3-month commitment because we put
-          in a lot of work upfront, not only making the first 2-3 week training
-          plans but coming up with an outline for future months to help you
-          reach your long and short-term goals.
+          interested in monthly coaching,
+          <a href="mailto:amit@exponentialrunning.com">email us</a>. After that,
+          we’ll get in contact with you to discuss your answers and get your
+          customized training schedule started along with a game plan to let you
+          in on what we’ll be having you do and why.  Its an initial 3-month
+          commitment. We ask for the 3-month commitment because we put in a lot
+          of work upfront, not only making the first 2-3 week training plans but
+          coming up with an outline for future months to help you reach your
+          long and short-term goals.
         </p>
         <p class="text-body2 text-left">
           We give weekly training plans at a time, but always make a long-term
@@ -294,8 +296,8 @@
           Please let us know if you have any questions!
         </p>
         <p class="text-body2 text-left">
-          Send an email to coach EMAIL LINK for more information. Call us /
-          Whatsapp us :
+          Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
+          more information.
         </p>
       </div>
     </div>
@@ -480,8 +482,8 @@
           </q-img>
         </div>
         <h6 class="text-left">
-          Send an email to coach EMAIL LINK for more information. Call us/Whats
-          app us :
+          Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
+          more information.
         </h6>
       </div>
     </div>
@@ -581,8 +583,8 @@
           </q-img>
         </div>
         <h6 class="text-left">
-          Send an email to coach EMAIL LINK for more information. Call us/Whats
-          app us :
+          Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
+          more information.
         </h6>
       </div>
     </div>
