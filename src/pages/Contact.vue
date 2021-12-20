@@ -40,7 +40,12 @@
               <p class="text-left">
                 If you have any questions or you would like to know more about
                 Exponential Running, Send us your message and we will be in
-                touch with you promptly.
+                touch with you promptly or chat with us on
+                <a
+                  href="https://web.whatsapp.com/send?phone=919619737123"
+                  target="_blank"
+                  >Whatsapp</a
+                >
               </p>
               <form
                 class="q-mt-xl q-gutter-y-sm"
@@ -105,7 +110,12 @@
               <p class="text-left text-body2">
                 If you have any questions or you would like to know more about
                 Exponential Running, Send us your message and we will be in
-                touch with you promptly.
+                touch with you promptly or chat with us on
+                <a
+                  href="https://web.whatsapp.com/send?phone=919619737123"
+                  target="_blank"
+                  >Whatsapp</a
+                >
               </p>
               <q-form
                 ref="form"

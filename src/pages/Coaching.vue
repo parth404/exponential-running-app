@@ -223,7 +223,12 @@
         </p>
         <p class="text-body1 text-left">
           Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
-          more information.
+          more information or chat with us on
+          <a
+            href="https://web.whatsapp.com/send?phone=919619737123"
+            target="_blank"
+            >Whatsapp</a
+          >
         </p>
       </div>
     </div>
@@ -297,7 +302,12 @@
         </p>
         <p class="text-body2 text-left">
           Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
-          more information.
+          more information or chat with us on
+          <a
+            href="https://web.whatsapp.com/send?phone=919619737123"
+            target="_blank"
+            >Whatsapp</a
+          >
         </p>
       </div>
     </div>
@@ -483,7 +493,12 @@
         </div>
         <h6 class="text-left">
           Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
-          more information.
+          more information or chat with us on
+          <a
+            href="https://web.whatsapp.com/send?phone=919619737123"
+            target="_blank"
+            >Whatsapp</a
+          >
         </h6>
       </div>
     </div>
@@ -584,7 +599,12 @@
         </div>
         <h6 class="text-left">
           Send us an <a href="mailto:amit@exponentialrunning.com">email</a> for
-          more information.
+          more information or chat with us on
+          <a
+            href="https://web.whatsapp.com/send?phone=919619737123"
+            target="_blank"
+            >Whatsapp</a
+          >
         </h6>
       </div>
     </div>

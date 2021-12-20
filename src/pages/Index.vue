@@ -294,8 +294,8 @@
                 RACE<br />
                 ESTIMATOR
               </h5>
-              <div class="row justify-start q-mr-xs q-mb-sm">
-                <span class="col-11 text-caption2 text-white no-margin">
+              <div class="row justify-start q-mr-xs q-px-sm q-pt-sm q-my-sm">
+                <span class="col-11 text-left mobileText text-white no-margin">
                   Enter your recent race time
                 </span>
                 <div class="col">
