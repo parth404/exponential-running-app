@@ -166,49 +166,35 @@
             <q-img
               src="~assets/52.jpeg"
               fit="fill"
-              style="border-radius: 20px; height: 100%"
+              style="border-radius: 20px"
             />
           </div>
           <div class="col">
-            <p class="q-ml-md text-body1 text-right">
+            <p class="q-ml-md text-h6 text-right">
               Running by feel you can learn to trust your body what it is ready
               for, leaving you confident, prepared and in best shape of your
               life
             </p>
-            <p
-              class="
-                text-body1
-                q-ml-xl q-pl-xl q-pt-lg
-                text-right text-weight-regular
-              "
-            >
-              Perhaps “Feeling Based Training” sounds a little too cute and
-              fuzzy for some of the hard core runners out there, but in reality,
-              it’s something the best coaches in the world have used for
-              decades. It doesn’t mean that you shouldn’t follow a training
-              plan, it means that you know your body well enough to know exactly
-              what it needs to do every day to help you reach your optimal
-              performance. Learning your body’s signs can help you avoid
-              overtraining, let you know how to balance recovery days with
-              workouts, and give you a performance boost.
-            </p>
-            <p
-              class="
-                text-body1
-                q-ml-xl q-pl-xl q-pt-lg
-                text-right text-weight-regular
-              "
-            >
-              Though the core of our training philosophy is based off of
-              feeling, we also have a very scientific approach that will play a
-              large part in how to design your training plans. Whenever you want
-              us to, we can explain why we’re having you do certain things and
-              what’s going on in your body during different runs. Our job and
-              passion is to empower runners with all the knowledge they need to
-              be successful.
-            </p>
           </div>
         </div>
+        <p class="text-body1 text-left text-weight-regular">
+          Perhaps “Feeling Based Training” sounds a little too cute and fuzzy
+          for some of the hard core runners out there, but in reality, it’s
+          something the best coaches in the world have used for decades. It
+          doesn’t mean that you shouldn’t follow a training plan, it means that
+          you know your body well enough to know exactly what it needs to do
+          every day to help you reach your optimal performance. Learning your
+          body’s signs can help you avoid overtraining, let you know how to
+          balance recovery days with workouts, and give you a performance boost.
+        </p>
+        <p class="text-body1 text-left text-weight-regular">
+          Though the core of our training philosophy is based off of feeling, we
+          also have a very scientific approach that will play a large part in
+          how to design your training plans. Whenever you want us to, we can
+          explain why we’re having you do certain things and what’s going on in
+          your body during different runs. Our job and passion is to empower
+          runners with all the knowledge they need to be successful.
+        </p>
         <p class="text-body1 text-left">
           <b>Plans</b> are customized to fit your schedule and specific needs
           and are much more detailed and interactive than our downloadable
