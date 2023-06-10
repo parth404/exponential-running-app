@@ -170,15 +170,16 @@
 <script>
 import { ref } from "vue";
 import emailjs from "emailjs-com";
+import emailService from "../constants/constants";
 
 export default {
   name: "PageIndex",
   data() {
     return {
       user: {
-        service_id: "service_1vcpf2n",
-        template_id: "template_ixdgryo",
-        user_id: "user_Cjs5V1vk3Kt2XYd69dbPu",
+        service_id: "default_service",
+        template_id: emailService.template_id,
+        user_id: emailService.user_id,
         name: "",
         email: "",
         message: "",
