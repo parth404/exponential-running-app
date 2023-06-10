@@ -57,6 +57,7 @@
                   v-model="user.name"
                   label="Your full name *"
                   name="user_name"
+                  required
                   lazy-rules
                   :rules="[
                     (val) =>
@@ -82,6 +83,7 @@
                   name="message"
                   label="Message"
                   v-model="user.message"
+                  required
                   lazy-rules
                   :rules="[
                     (val) => (val && val.length > 0) || 'Please type something',
@@ -124,6 +126,7 @@
                   outlined
                   name="user_name"
                   v-model="user.name"
+                  required
                   label="Your full name *"
                   lazy-rules
                   :rules="[
@@ -149,6 +152,7 @@
                   type="textarea"
                   name="message"
                   label="Message"
+                  required
                   v-model="user.message"
                   lazy-rules
                   :rules="[
@@ -211,6 +215,7 @@ export default {
               type: "positive",
               message: "Your Message Has Been Delivered!",
             });
+            alert("Message Sent");
             this.toTop();
             this.reset();
           },
@@ -221,6 +226,7 @@ export default {
               message: "Failed To Send Message",
             });
             console.log(error);
+            alert("Failed To Send Message");
           }
         );
     },
